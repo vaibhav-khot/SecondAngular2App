@@ -8,11 +8,11 @@ import { AutoGrowDirective } from './auto-grow.directive';
   template : `
               <h1>{{title}}</h1>
               <input type="text" autoGrow/>
-              <ul>
-                <li *ngFor="let author of authors">
-                {{author}}
-                </li>
-              </ul>
+              <div>
+                <p *ngFor="let author of authors; let i = index">
+                {{i}}.{{author}}
+                </p>
+              </div>
 
               `,
   providers : [ AuthorService ]
