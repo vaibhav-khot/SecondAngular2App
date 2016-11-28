@@ -6,14 +6,14 @@ import { CourseService } from './course.service';
 
 @Component({
   selector: 'my-app',
-  template: `<h1>My 2nd Angular app</h1>
-  <courses></courses>
+  template: `<h1>My 2nd {{name}} app</h1>
+            <courses></courses>
 
-  <authors></authors>
-
-
-  `,
+            <authors></authors>
+            `,
   providers :[CourseService]
 })
+
+
 export class AppComponent  {
 name = 'Angular'; }
