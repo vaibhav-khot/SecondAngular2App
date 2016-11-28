@@ -12,6 +12,7 @@ import { CourseService } from './course.service';
 
             <authors></authors>
             <button (click)="mouseClick($event)">I clicked it {{times}} times </button>
+            <div *ngIf="times== 2"> You Have clicked 2 times Stop!</div>
             `,
   providers :[CourseService]
 
