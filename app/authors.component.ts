@@ -7,13 +7,12 @@ import { AutoGrowDirective } from './auto-grow.directive';
   selector : "authors",
   template : `
               <h1>{{title}}</h1>
-              <input type="text" autoGrow/>
+              <input type="text" autoGrow />
               <div>
-                <p *ngFor="let author of authors; let i = index">
-                {{i}}.{{author}}
+                <p *ngFor="let author of authors;let i = index">
+                {{i + 1}} {{author}}
                 </p>
               </div>
-
               `,
   providers : [ AuthorService ]
 })
@@ -23,7 +22,6 @@ export class AuthorsComponent {
   authors : any;
   constructor(authorService : AuthorService){
   this.authors = authorService.getAuthors();
-
 }
 
 }
