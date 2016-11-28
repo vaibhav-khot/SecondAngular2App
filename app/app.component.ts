@@ -8,6 +8,7 @@ import { CourseService } from './course.service';
   selector: 'my-app',
   template: `<h1>My 2nd Angular app</h1>
   <courses></courses>
+
   <authors></authors>
 
 
