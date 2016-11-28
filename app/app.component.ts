@@ -11,6 +11,7 @@ import { CourseService } from './course.service';
             <courses></courses>
 
             <authors></authors>
+            <button (click)="mouseClick($event)">I clicked it {{times}} times </button>
             `,
   providers :[CourseService]
 
@@ -18,4 +19,15 @@ import { CourseService } from './course.service';
 
 
 export class AppComponent  {
-name = 'Angular'; }
+name = 'Angular';
+times : number = 0;
+  mouseClick(event : any){
+    this.times++;
+    console.log(event);
+    console.log(event.target);
+    }
+
+}
+//(click)
+//(dblclick)
+//(mousemove)
