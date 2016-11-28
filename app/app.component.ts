@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component ,Directive } from '@angular/core';
 import { CoursesComponent } from './courses.component';
 import { AuthorsComponent } from './authors.component';
 import { CourseService } from './course.service';
+
 
 
 @Component({
@@ -12,6 +13,7 @@ import { CourseService } from './course.service';
             <authors></authors>
             `,
   providers :[CourseService]
+
 })
 
 
